@@ -1,12 +1,9 @@
 import csv
-from typing import Optional, List
 
 class FamilyMember:
-    def __init__(self, first_name, last_name, birth_date, death, mother=None, father=None, partner=None):
+    def __init__(self, first_name, last_name, mother=None, father=None, partner=None):
         self.first_name = first_name
         self.last_name = last_name
-        self.birth_date = birth_date
-        self.death = death
         self.mother = mother
         self.father = father
         self.children = []
@@ -25,19 +22,15 @@ def create_family_tree(csv_file):
     family = []
     csv_data = []
 
-    # Read CSV data and store it in csv_data list
     with open(csv_file, newline='') as file:
         reader = csv.DictReader(file)
         for row in reader:
             csv_data.append(row)
 
-    # Create FamilyMember objects
     for row in csv_data:
-        family_member = FamilyMember(row['FirstName'], row['LastName'], 
-                                     row['BirthDate'], row['Death'])
+        family_member = FamilyMember(row['FirstName'], row['LastName'])
         family.append(family_member)
 
-    # Assign relationships using stored CSV data
     for row in csv_data:
         member = find_member(family, row['FirstName'], row['LastName'])
         if member:
@@ -50,19 +43,15 @@ def create_family_tree(csv_file):
 
     return family
 
-
 def get_family_details(family, first_name, last_name):
     member = find_member(family, first_name, last_name)
     if not member:
         return "Member not found"
 
     parents = [parent for parent in [member.mother, member.father] if parent]
-
     grandmothers = [grandparent for parent in parents for grandparent in [parent.mother] if grandparent]
     grandfathers = [grandparent for parent in parents for grandparent in [parent.father] if grandparent]
-
     children = member.children
-
     grandchildren = [grandchild for child in children for grandchild in child.children if grandchild]
 
     return {
@@ -75,7 +64,7 @@ def get_family_details(family, first_name, last_name):
 
 csv_file_path = 'family_tree.csv'
 def main():
-    family = create_family_tree('family_tree.csv')
+    family = create_family_tree(csv_file_path)
 
     first_name = input("Enter the first name: ")
     last_name = input("Enter the last name: ")

@@ -13,6 +13,7 @@ class FamilyMember:
         return f"{self.first_name} {self.last_name}"
 
 def find_member(family, first_name, last_name):
+    # Function to find a family member by their first and last name in the family list.
     for member in family:
         if member.first_name == first_name and member.last_name == last_name:
             return member
@@ -22,15 +23,18 @@ def create_family_tree(csv_file):
     family = []
     csv_data = []
 
+    # Read data from the CSV file and store it in a list of dictionaries.
     with open(csv_file, newline='') as file:
         reader = csv.DictReader(file)
         for row in reader:
             csv_data.append(row)
 
+    # Create FamilyMember objects for each person in the CSV data and add them to the family list.
     for row in csv_data:
         family_member = FamilyMember(row['FirstName'], row['LastName'])
         family.append(family_member)
 
+    # Populate the relationships (mother, father, partner, children) for each family member.
     for row in csv_data:
         member = find_member(family, row['FirstName'], row['LastName'])
         if member:
@@ -44,10 +48,12 @@ def create_family_tree(csv_file):
     return family
 
 def get_family_details(family, first_name, last_name):
+    # Function to get family details of a specific family member.
     member = find_member(family, first_name, last_name)
     if not member:
         return "Member not found"
 
+    # Extract parents, grandparents, children, and grandchildren information.
     parents = [parent for parent in [member.mother, member.father] if parent]
     grandmothers = [grandparent for parent in parents for grandparent in [parent.mother] if grandparent]
     grandfathers = [grandparent for parent in parents for grandparent in [parent.father] if grandparent]
@@ -64,11 +70,14 @@ def get_family_details(family, first_name, last_name):
 
 csv_file_path = 'family_tree.csv'
 def main():
+    # Create the family tree from the CSV file.
     family = create_family_tree(csv_file_path)
 
+    # Input the first name and last name of the family member to get details.
     first_name = input("Enter the first name: ")
     last_name = input("Enter the last name: ")
 
+    # Retrieve and print the family details for the specified family member.
     family_details = get_family_details(family, first_name, last_name)
     print("\nFamily Details:")
     print(family_details)

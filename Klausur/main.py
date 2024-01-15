@@ -73,8 +73,6 @@ def get_family_details(family, first_name, last_name):
         'Grandchildren': grandchildren
     }
 
-
-
 csv_file_path = 'family_tree.csv'
 def main():
     family = create_family_tree('family_tree.csv')

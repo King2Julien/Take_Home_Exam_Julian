@@ -1,8 +1,0 @@
-FirstName,LastName,Mother,Father
-Karl,Schmidt,,
-Elisabeth,Weber,,
-Maria,Schmidt,Elisabeth Weber,Karl Schmidt
-Anna,Bauer,,
-Hans,Schmidt,Elisabeth Weber,Karl Schmidt
-Maximilian,Schmidt,Anna Bauer,Hans Schmidt
-Michael,Schmidt,Anna Bauer,Hans Schmidt

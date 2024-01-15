@@ -1,0 +1,11 @@
+FirstName,LastName,BirthDate,Death,Mother,Father,Children,Partner,Grandmother,Grandfather
+Karl,Schmidt,01/01/1940,,Ursula Becker,Friedrich Schmidt,Hans Schmidt;Maria Bauer,Elisabeth Weber,Ursula Becker,Hans Weber
+Elisabeth,Weber,01/05/1942,,Erika Müller,Wolfgang Weber,Karl Schmidt,Hans Weber,Erika Müller,Wolfgang Weber
+Hans,Schmidt,01/01/1970,,Elisabeth Weber,Karl Schmidt,Lukas Schmidt;Sofia Schmidt,Sabine Krause,Ursula Becker,Friedrich Schmidt
+Maria,Bauer,01/03/1972,,Anna Braun,Michael Bauer,Emma Bauer;Max Bauer,Jürgen Fuchs,Erika Müller,Wolfgang Weber
+Sabine,Krause,01/06/1970,,Petra Vogel,Klaus Krause,Hans Schmidt,Petra Vogel,Klaus Krause
+Lukas,Schmidt,01/01/2000,,Sabine Krause,Hans Schmidt,,Lena Meier,Elisabeth Weber,Karl Schmidt
+Sofia,Schmidt,01/04/2002,,Sabine Krause,Hans Schmidt,,
+Emma,Bauer,01/07/2000,,Maria Bauer,Jürgen Fuchs,,
+Max,Bauer,01/09/2003,,Maria Bauer,Jürgen Fuchs,,
+Lena,Meier,01/02/2000,,Monika Fischer,Stefan Meier,Lukas Schmidt,Monika Fischer,Stefan Meier

@@ -1,11 +1,40 @@
-FirstName,LastName,BirthDate,Death,Mother,Father,Children,Partner,Grandmother,Grandfather
-Karl,Schmidt,01/01/1940,,Ursula Becker,Friedrich Schmidt,Hans Schmidt;Maria Bauer,Elisabeth Weber,Ursula Becker,Hans Weber
-Elisabeth,Weber,01/05/1942,,Erika Müller,Wolfgang Weber,Karl Schmidt,Hans Weber,Erika Müller,Wolfgang Weber
-Hans,Schmidt,01/01/1970,,Elisabeth Weber,Karl Schmidt,Lukas Schmidt;Sofia Schmidt,Sabine Krause,Ursula Becker,Friedrich Schmidt
-Maria,Bauer,01/03/1972,,Anna Braun,Michael Bauer,Emma Bauer;Max Bauer,Jürgen Fuchs,Erika Müller,Wolfgang Weber
-Sabine,Krause,01/06/1970,,Petra Vogel,Klaus Krause,Hans Schmidt,Petra Vogel,Klaus Krause
-Lukas,Schmidt,01/01/2000,,Sabine Krause,Hans Schmidt,,Lena Meier,Elisabeth Weber,Karl Schmidt
-Sofia,Schmidt,01/04/2002,,Sabine Krause,Hans Schmidt,,
-Emma,Bauer,01/07/2000,,Maria Bauer,Jürgen Fuchs,,
-Max,Bauer,01/09/2003,,Maria Bauer,Jürgen Fuchs,,
-Lena,Meier,01/02/2000,,Monika Fischer,Stefan Meier,Lukas Schmidt,Monika Fischer,Stefan Meier
+FirstName,LastName,Mother,Father,Children,Partner,Grandmother,Grandfather
+Karl,Schmidt,Ursula Becker,Friedrich Schmidt,Hans Schmidt;Maria Bauer,Elisabeth Weber,Ursula Becker,Hans Weber
+Elisabeth,Weber,Erika Müller,Wolfgang Weber,Karl Schmidt,Hans Weber,Erika Müller,Wolfgang Weber
+Hans,Schmidt,Elisabeth Weber,Karl Schmidt,Lukas Schmidt;Sofia Schmidt,Sabine Krause,Ursula Becker,Friedrich Schmidt
+Maria,Bauer,Anna Braun,Michael Bauer,Emma Bauer;Max Bauer,Jürgen Fuchs,Erika Müller,Wolfgang Weber
+Sabine,Krause,Petra Vogel,Klaus Krause,Hans Schmidt;Lena Meier,Petra Vogel,Klaus Krause
+Lukas,Schmidt,Sabine Krause,Hans Schmidt,,Lena Meier,Elisabeth Weber,Karl Schmidt
+Sofia,Schmidt,Sabine Krause,Hans Schmidt,,
+Emma,Bauer,Maria Bauer,Jürgen Fuchs,,
+Max,Bauer,Maria Bauer,Jürgen Fuchs,,
+Lena,Meier,Monika Fischer,Stefan Meier,Lukas Schmidt,Monika Fischer,Stefan Meier
+Johann,Weber,Eva Müller,Thomas Weber,Lisa Weber;Michael Weber,,Eva Müller,Thomas Weber
+Lisa,Weber,Julia Schneider,Klaus Weber,Hanna Weber;Paul Weber,Johannes Meier,Julia Schneider,Klaus Weber
+Michael,Weber,Caroline Fischer,Markus Weber,Sarah Weber;David Weber,Marie Schmidt,Caroline Fischer,Markus Weber
+Sarah,Weber,Isabella Wagner,Christian Weber,,Johannes Meier,Isabella Wagner,Christian Weber
+David,Weber,Anna Müller,Robert Weber,,Sophie Krause,Anna Müller,Robert Weber
+Sophie,Krause,Sabine Vogel,Max Krause,,David Weber,Sabine Vogel,Max Krause
+Caroline,Fischer,Susanne Schmidt,Andreas Fischer,Michael Weber,,Susanne Schmidt,Andreas Fischer
+Paul,Weber,Hanna Bauer,Paul Weber,Johann Weber;Laura Bauer,Caroline Fischer,Hanna Bauer,Paul Weber
+Laura,Bauer,Anna Müller,Robert Bauer,Klara Bauer;Simon Bauer,,Anna Müller,Robert Bauer
+Klara,Bauer,Susanne Schmidt,Andreas Bauer,Emil Bauer;Fiona Bauer,Michael Vogel,Susanne Schmidt,Andreas Bauer
+Emil,Bauer,Isabella Wagner,Christian Bauer,Moritz Bauer;Elena Bauer,Anna Schmidt,Isabella Wagner,Christian Bauer
+Moritz,Bauer,Anna Müller,Robert Bauer,Melanie Bauer;Julian Bauer,Emma Weber,Anna Müller,Robert Bauer
+Melanie,Bauer,Caroline Fischer,Markus Bauer,Sophia Bauer;Maximilian Bauer,Lea Krause,Caroline Fischer,Markus Bauer
+Julian,Bauer,Sabine Vogel,Max Bauer,Marie Bauer;Lukas Bauer,Lena Schmidt,Sabine Vogel,Max Bauer
+Elena,Bauer,Julia Schneider,Klaus Bauer,Paula Bauer;Felix Bauer,Jonas Vogel,Julia Schneider,Klaus Bauer
+Fiona,Bauer,Susanne Schmidt,Andreas Bauer,Elisa Bauer;Johannes Bauer,Hanna Vogel,Susanne Schmidt,Andreas Bauer
+Elisa,Bauer,Isabella Wagner,Christian Bauer,Lukas Bauer;Sophie Bauer,,Isabella Wagner,Christian Bauer
+Maximilian,Bauer,Anna Müller,Robert Bauer,Pauline Bauer;Noah Bauer,Emilia Vogel,Anna Müller,Robert Bauer
+Pauline,Bauer,Caroline Fischer,Markus Bauer,Karla Bauer;Tom Bauer,Mia Krause,Caroline Fischer,Markus Bauer
+Karla,Bauer,Isabella Wagner,Christian Bauer,Leni Bauer;Finn Bauer,Emilie Schmidt,Isabella Wagner,Christian Bauer
+Leni,Bauer,Anna Müller,Robert Bauer,Emilie Bauer;Levi Bauer,Sophia Vogel,Anna Müller,Robert Bauer
+Emilie,Bauer,Julia Schneider,Klaus Bauer,Lia Bauer;Elias Bauer,Luis Vogel,Julia Schneider,Klaus Bauer
+Lia,Bauer,Susanne Schmidt,Andreas Bauer,Henry Bauer;Emma Bauer,Lina Vogel,Susanne Schmidt,Andreas Bauer
+Henry,Bauer,Isabella Wagner,Christian Bauer,Mila Bauer;Theo Bauer,Olivia Vogel,Isabella Wagner,Christian Bauer
+Mila,Bauer,Anna Müller,Robert Bauer,Ida Bauer;Anton Bauer,Ella Vogel,Anna Müller,Robert Bauer
+Ida,Bauer,Caroline Fischer,Markus Bauer,Felix Bauer;Leah Bauer,Julius Krause,Caroline Fischer,Markus Bauer
+Felix,Bauer,Sabine Vogel,Max Bauer,Lina Bauer;Tim Bauer,Emily Schmidt,Sabine Vogel,Max Bauer
+Lina,Bauer,Julia Schneider,Klaus Bauer,Sam Bauer;Mia Bauer,Levi Schmidt,Julia Schneider,Klaus Bauer
+Sam,Bauer,Susanne Schmidt,Andreas Bauer,Lena Bauer;Tom Bauer,,Susanne Schmidt,Andreas Bauer

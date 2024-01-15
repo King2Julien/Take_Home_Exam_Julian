@@ -80,44 +80,57 @@ def find_family_information(family, full_name):
             'Grandfather (Father Side)': grandparents['Grandfather (Father Side)'],
             'Mother': member.mother,
             'Father': member.father,
-            'Partner': member.partner,
-            'Children': member.children,
-            'Grandchildren from Children': [child.children for child in member.children]
+            'Partner': member.partner
         }
     else:
         return None
 
-def display_family_information(info):
+def find_children(family, parent):
+    children = []
+    for member in family.values():
+        if member.mother == parent or member.father == parent:
+            children.append(member)
+    return children
+
+def find_grandchildren(children):
+    grandchildren = []
+    for child in children:
+        grandchildren.extend(child.children)
+    return grandchildren
+
+def display_family_information(info, children, grandchildren):
     for key, value in info.items():
         if value:
-            if key == 'Grandchildren from Children':
-                grandchildren_info = {}
-                for child in value:
-                    if child:
-                        grandchildren_info[child[0].first_name] = [gc.first_name for gc in child]
-                print(f'{key}: {grandchildren_info}')
-            elif isinstance(value, FamilyMember):
+            if isinstance(value, FamilyMember):
                 print(f'{key}: {value.first_name} {value.last_name}')
             else:
                 print(f'{key}: {value}')
         else:
             print(f'{key}: None')
 
+    print("Children:", ', '.join([f"{child.first_name} {child.last_name}" for child in children]))
+    print("Grandchildren:", ', '.join([f"{grandchild.first_name} {grandchild.last_name}" for grandchild in grandchildren]))
+
 def main():
     csv_file_path = 'family_tree_zenofpython.csv'
     family_tree = create_family_tree(csv_file_path)
+    
     first_name = input("Enter the first name: ")
     last_name = input("Enter the last name: ")
     full_name = f"{first_name} {last_name}"
 
     family_information = find_family_information(family_tree, full_name)
     if family_information:
-        display_family_information(family_information)
+        person = family_tree[full_name]
+        children = find_children(family_tree, person)
+        grandchildren = find_grandchildren(children)
+        display_family_information(family_information, children, grandchildren)
     else:
         print("Member not found")
 
 if __name__ == "__main__":
     main()
+
 
 
 

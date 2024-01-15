@@ -27,7 +27,7 @@ Details about the testing approach and how to run tests for this project.
 While this project is primarily for a take-home exam and not open for contributions, any feedback or suggestions are always welcome.
 
 ## Author
-[Your Name] - [Your Contact Information or Profile Link]
+Julian Domenig - https://github.com/King2Julien
 
 ## License
 State the type of license this code is shared under, if applicable.
